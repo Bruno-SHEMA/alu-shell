@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "School" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+echo "School" | fold -w1 | shuf | tr -d '\n'
