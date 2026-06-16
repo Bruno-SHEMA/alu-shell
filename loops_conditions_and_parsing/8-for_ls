@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Displays filenames after the first dash using for
+
+for file in *
+do
+    echo "${file#*-}"
+done

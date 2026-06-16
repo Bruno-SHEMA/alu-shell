@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Check if the file exists as an argument, otherwise use default using awk
+FILE=${1:-apache-access.log}
+
+awk '{print $1, $9}' "$FILE" | sort | uniq -c | sort -rn
